@@ -24,12 +24,20 @@ html, body {
     width: 1578px;
     height: 1144px;
 
-    background: url("../img/main/main.png") no-repeat center top;
-    background-size: cover;
-
-    filter: blur(20px);
     z-index: 1;
+    overflow: hidden; /* чтобы изображение не вылезало */
 }
+
+.main-bg {
+    width: 100%;       /* подгонять размер — здесь можно менять */
+    height: auto;      /* сохраняет пропорции */
+
+    object-fit: cover; /* если хочешь, чтобы заполняла блок */
+    filter: blur(20px);
+
+    display: block;
+}
+
 
 /* логотипный блок */
 .logo {
@@ -43,8 +51,8 @@ html, body {
 .logo-title {
     font-family: 'Geologica', sans-serif;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 28px;
+    line-height: 20px;
     letter-spacing: 0.06em;
     color: #2D2D2D;
 }
@@ -53,48 +61,172 @@ html, body {
     margin-top: 2px; /* вместо Figma top: 73px */
     font-family: 'Geologica', sans-serif;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 7px;
     line-height: 12px;
     letter-spacing: 0.02em;
     color: #2D2D2D;
 }
 
+/* хедер */
+/* Общий контейнер меню в рамке */
+.header-rectangle-3 {
+  position: absolute;
+  left: 402px;
+  top: 30px;
 
+  width: 956px;
+  height: 50px;
 
-/* мобильная версия */
-@media (max-width: 480px) {
+  border-radius: 25px;
+  border: 2px solid #2D2D2D;
+  background-color: transparent;
+  box-sizing: border-box;
 
-   /* блок "главная" — мобил */
-  .main {
-    top: 0;
-    left: 0;
-    transform: none;
+  display: flex;
+  align-items: center;
+}
 
-    width: 100%;
-    height: 360px; /* лучше фиксированная высота */
+/* Rectangle 3 */
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px; /* расстояние между кнопками (можно подправить под Figma) */
+  padding: 0 25px; /* внутренние отступы как в Figma */
+}
 
-    background: url("../img/main/main.png") no-repeat center top;
-    background-size: cover;
-  }
+/* Обычные кнопки меню */
+.header-item {
+  font-family: 'Geologica', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #2D2D2D;
+  cursor: pointer;
+  user-select: none;
+}
 
-    /* логотипный блок */
-  .logo {
-      top: 20px;
-      left: 20px;
-  }
+/* Белая кнопка (Frame 3) */
+.header-btn {
+  width: 150px;
+  height: 50px;
 
-  .logo-title {
-      font-size: 26px;
-      line-height: 32px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .logo-subtitle {
-      font-size: 8px;
-      line-height: 10px;
-  }
+  color: #FFFFFF;
+  font-family: 'Geologica', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
 
+  background: rgba(0,0,0,0.001);
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: inset 0px 4px 8px rgba(255,255,255,0.3);
+  border-radius: 30px;
+
+  cursor: pointer;
+  user-select: none;
 }
 
 
+
+
+/* мобильная версия */
+
+@media (max-width: 480px) {
+
+  .hero {
+    background: #D7E0EB;
+    width: 100%;
+    min-height: auto; /* чтобы секция подстраивалась под контент */
+    position: relative;
+    overflow: hidden; /* чтобы фон не вылезал */
+  }
+
+  .main {
+    position: relative;
+    width: 100%;
+    height: 260px; /* или auto, если хочешь под контент */
+    overflow: hidden;
+    }
+
+  .main-bg {
+    width: 100%;
+    height: 100%;       /* растягиваем по высоте блока */
+    object-fit: cover;  /* сохраняем пропорции */
+    filter: blur(15px); /* меньше размытие на мобильных */
+    }
+
+
+
+
+  /* логотипный блок */
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 2; /* чтобы было поверх размытием */
+  }
+
+  .logo-title {
+    margin: 0;
+    font-family: 'Geologica';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 7px;
+    color: #2D2D2D;
+  }
+
+  .logo-subtitle {
+    margin-top: 2px;
+    font-family: 'Geologica';
+    font-weight: 700;
+    font-size: 5px;
+    line-height: 10px;
+    color: #2D2D2D;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* мобильная версия */
+@media (max-width: 480px) {
+  /* скрываем десктопное меню */
+  .header-rectangle-3 {
+    display: none;
+  }
+
+  /* показываем мобильное меню */
+  .header-mobile {
+    position: absolute;
+    top: 20px;
+    left: 228px;
+
+    display: flex;
+    gap: 15px; /* расстояние между иконками */
+  }
+
+  .header-mobile .icon {
+    width: 30px;
+    height: 30px;
+    background-color: #2D2D2D; /* как в Figma */
+    border-radius: 5px; /* можно подкорректировать под Figma */
+    cursor: pointer;
+  }
+
+  .header-mobile .telegram {
+    background: url('../img/main/telegram_mobil.png') no-repeat center center;
+    background-size: cover;
+  }
+  .header-mobile .whatsapp {
+    background: url('../img/main/whatsapp_mobil.png') no-repeat center center;
+    background-size: cover;
+  }
+  .header-mobile .burger {
+    background: url('../img/main/burger_mobil.png') no-repeat center center;
+    background-size: cover;
+  }
+}
 
 
