@@ -31,10 +31,40 @@ html, body {
     z-index: 1;
 }
 
+/* логотипный блок */
+.logo {
+    position: absolute;
+    top: 42px;     /* вместо Figma left/top */
+    left: 37px;
+
+    z-index: 10;   /* чтобы быть поверх размытого фона */
+}
+
+.logo-title {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.06em;
+    color: #2D2D2D;
+}
+
+.logo-subtitle {
+    margin-top: 2px; /* вместо Figma top: 73px */
+    font-family: 'Geologica', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+}
+
+
 
 /* мобильная версия */
 @media (max-width: 480px) {
 
+   /* блок "главная" — мобил */
   .main {
     top: 0;
     left: 0;
@@ -46,5 +76,25 @@ html, body {
     background: url("../img/main/main.png") no-repeat center top;
     background-size: cover;
   }
+
+    /* логотипный блок */
+  .logo {
+      top: 20px;
+      left: 20px;
+  }
+
+  .logo-title {
+      font-size: 26px;
+      line-height: 32px;
+  }
+
+  .logo-subtitle {
+      font-size: 8px;
+      line-height: 10px;
+  }
+
 }
+
+
+
 
