@@ -8,7 +8,7 @@ html, body {
 /* глобальный блок десктопа */
 .hero {
     width: 100%;
-    min-height: 100vh;
+    min-height: 220vh;
     background: #D7E0EB;
     position: relative;
 
@@ -318,6 +318,48 @@ html, body {
   text-align: left;  /* ← выравнивание по левому краю */
 }
 
+/* Большая кнопка (Rectangle 7) */
+.cta-button {
+  position: absolute;
+  left: 41px;
+  top: 721px;
+
+  width: 650px;
+  height: 88px;
+
+  background: #2D2D2D;
+  border-radius: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;         /* расстояние между трубкой и текстом */
+  padding-left: 35px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Иконка трубки (Vector) */
+.cta-icon {
+  width: 40px;      /* можно подправить под твою картинку */
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Текст внутри кнопки */
+.cta-text {
+  font-family: 'Geologica Cursive', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+  max-width: 440px; /* чтобы текст не вылезал */
+}
+
 
 
 /* мобильная версия */
@@ -326,7 +368,7 @@ html, body {
   .hero {
     background: #D7E0EB;
     width: 100%;
-    min-height: 100vh;
+    min-height: 220vh;
     position: relative;
   }
 
@@ -534,7 +576,7 @@ html, body {
     top: 70.8vh;
     width: 85.33vw;
 
-    font-size: 6.66vw;   
+    font-size: 6.66vw;
     line-height: 8vw;
     letter-spacing: 0.02em;
     font-weight: 600;
@@ -555,6 +597,44 @@ html, body {
     color: #2D2D2D;
     z-index: 2;
   }
+
+    /* Мобильная версия большой кнопки */
+    .cta-button {
+      position: absolute;
+      left: 4.93vw;     /* было 41px */
+      top: 102.75vh;     /* было 692px */
+
+      width: 85.33%;
+      height: 6.49vh;
+
+      background: #2D2D2D;
+      border-radius: 10px;
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-left: 15px;
+      box-sizing: border-box;
+    }
+
+    .cta-icon {
+      width: 15px;
+      height: 15px;
+      object-fit: contain;
+    }
+
+    .cta-text {
+      font-size: 15px;
+      line-height: 19px;
+      text-transform: uppercase;
+      text-align: left;
+
+      font-family: 'Geologica Cursive', sans-serif;
+      color: #ffffff;
+
+      max-width: 230px;
+    }
+
 
 
 }
