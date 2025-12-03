@@ -281,7 +281,42 @@ html, body {
   color: #2D2D2D;
 }
 
+/* Main title */
+.main-title {
+  position: absolute;
+  left: 47px;
+  top: 282px;
+  width: 749px;
 
+  font-family: 'Geologica', sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 0.02em;
+  color: #2D2D2D;
+  text-transform: uppercase;
+  z-index: 2;
+
+  text-align: left;  /* ← выравнивание по левому краю */
+}
+
+/* Main subtitle */
+.main-subtitle {
+  position: absolute;
+  left: 47px;
+  top: 599px; /* ← было 599px — сдвинули ближе */
+
+  width: 650px;
+
+  font-family: 'Geologica Cursive', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D2D2D;
+  z-index: 2;
+
+  text-align: left;  /* ← выравнивание по левому краю */
+}
 
 
 
@@ -493,7 +528,33 @@ html, body {
       text-align: left;
     }
 
+  .main-title {
+    position: absolute;
+    left: 5.33vw;
+    top: 70.8vh;
+    width: 85.33vw;
 
+    font-size: 6.66vw;   
+    line-height: 8vw;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #2D2D2D;
+    z-index: 2;
+  }
+
+  .main-subtitle {
+    position: absolute;
+    left: 5.33vw;
+    top: 89.8vh;
+    width: 79.73vw;
+
+    font-size: 4.26vw;
+    line-height: 5.3vw;
+    font-weight: 400;
+    color: #2D2D2D;
+    z-index: 2;
+  }
 
 
 }
