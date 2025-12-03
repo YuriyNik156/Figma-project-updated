@@ -147,6 +147,96 @@ html, body {
 }
 
 
+/* Логотипный блок (Текст верх / Rectangle 6) */
+.logo-frame {
+  position: absolute;
+  left: 41px;
+  top: 148px;
+
+  width: 433px;
+  height: 99px;
+
+  background: rgba(250, 250, 238, 0.3);
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;        /* одинаковый отступ между картинкой и текстом */
+  padding-left: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+
+/* Изображение (лого-кластер) */
+.logo-image {
+  position: static;     /* убираем absolute */
+  width: 108.78px;
+  height: 67.47px;
+  object-fit: contain;
+}
+
+/* Текст логотипа */
+.logo-text {
+  position: static;     /* тоже убираем absolute */
+  font-family: 'Geologica', sans-serif;
+  font-size: 24px;
+  line-height: 25px;
+  color: #2D2D2D;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+/* Контейнер блока поддержки */
+.support-block {
+  position: absolute;
+  left: 1085px;
+  top: 428px;
+
+  width: 223px;
+  height: 60px;
+
+  background: rgba(250, 250, 238, 0.08); /* FAFAEE - 1% */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+
+  box-shadow:
+    inset 0 4px 8px rgba(255, 255, 255, 0.25),  /* верхнее лёгкое свечение */
+    inset 0 -6px 12px rgba(0, 0, 0, 0.20);      /* нижний затемняющий слой */
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;         /* расстояние между значком и текстом */
+  padding-left: 25px;/* отступ слева, как в Figma */
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Иконка «Vector» */
+.support-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain; /* чтобы не растягивалась */
+}
+
+/* Текст "Поддержка 24/7" */
+.support-text {
+  font-family: 'Geologica', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D2D2D;
+}
+
+
+
 
 
 /* мобильная версия */
@@ -181,7 +271,7 @@ html, body {
 
   /* мобильный хедер → в одну линию */
   .header {
-    top: 10px;
+    top: 20px;
     left: 0;
     width: 92%;
 
@@ -236,4 +326,84 @@ html, body {
   .header-mobile .burger {
     background: url('../img/main/burger_mobil.png') no-repeat center center;
   }
+
+/* мобильный логотипный блок */
+    .logo-frame {
+      position: absolute;
+
+      left: 1.93vw;
+      top: 11.18vh;
+
+      width: 61.46vw;
+      height: 5.84vh;
+
+      background: rgba(250, 250, 238, 0.3);
+      border-radius: 30px;
+
+      display: flex;
+      align-items: center;
+      gap: 5vw;              /* пропорциональный отступ */
+      padding-left: 4vw;
+
+      box-sizing: border-box;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .logo-image {
+      width: 12vw;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .logo-text {
+      font-family: 'Geologica', sans-serif;
+      font-size: 3.2vw;
+      line-height: 1.1em;
+      color: #2D2D2D;
+    }
+
+/* --- Мобильная адаптация блока поддержки --- */
+  .support-block {
+    position: absolute;
+    left: 68.07vw;
+    top: 21.33vh;
+    width: 24.62vw;
+    height: 4.42vh;
+
+    background: rgba(250, 250, 238, 0.10);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    border-radius: 12px;
+    padding-left: 8px;
+    gap: 6px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-shadow:
+      inset 0 3px 6px rgba(255, 255, 255, 0.25),
+      inset 0 -4px 8px rgba(0, 0, 0, 0.18);
+
+    border-radius: 12px;
+
+    padding-left: 6px;
+    gap: 5px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .support-icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .support-text {
+    font-size: 6.5px;
+    line-height: 8px;
+    text-align: center;
+  }
+
+
 }
