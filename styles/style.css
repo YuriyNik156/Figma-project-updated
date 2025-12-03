@@ -11,7 +11,7 @@ html, body {
     min-height: 100vh;
     background: #D7E0EB;
     position: relative;
-    overflow: hidden;
+
 }
 
 /* блок "главная" — десктоп */
@@ -236,6 +236,52 @@ html, body {
 }
 
 
+/* Контейнер плашки — Frame 2 */
+.promo-card {
+  position: absolute;
+  left: 896px;
+  top: 621px;
+
+  width: 273px;
+  height: 260px;
+
+  background: rgba(250, 250, 238, 0.01); /* FAFAEE - 1% */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 4px 8px rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 2;
+}
+
+/* Картинка — Rectangle 5 */
+.promo-image {
+  width: 212px;
+  height: 157px;
+  border-radius: 10px;
+  object-fit: cover; /* чтобы красиво вписывалась */
+}
+
+/* Текст */
+.promo-text {
+  width: 212px;
+  margin-top: 15px;
+
+  font-family: 'Geologica', sans-serif;
+  font-weight: 500; /* medium */
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #2D2D2D;
+}
+
+
 
 
 
@@ -247,7 +293,6 @@ html, body {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    overflow: hidden;
   }
 
     .main {
@@ -363,12 +408,12 @@ html, body {
       color: #2D2D2D;
     }
 
-/* --- Мобильная адаптация блока поддержки --- */
+/* мобильная версия блока поддержки */
   .support-block {
     position: absolute;
-    left: 68.07vw;
+    left: 66.07vw;
     top: 21.33vh;
-    width: 24.62vw;
+    width: 29.62vw;
     height: 4.42vh;
 
     background: rgba(250, 250, 238, 0.10);
@@ -404,6 +449,37 @@ html, body {
     line-height: 8px;
     text-align: center;
   }
+
+/* Мобильная версия блока плашки */
+  .promo-card {
+    position: absolute;
+    margin: 20px auto;
+    left: 11.07vw;
+    top: -1.33vh;
+    width: 31vw;              /* ширина плашки под мобилу */
+    height: 31hv;              /* высота по содержимому */
+    padding: 15px;             /* мягкие отступы */
+    border-radius: 20px;       /* чуть меньше радиус */
+    margin-top: 200px;
+    margin-left: 200px;
+    z-index: 2;
+  }
+
+  .promo-image {
+    width: 100%;               /* растянуть под ширину плашки */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .promo-text {
+    width: 100%;
+    margin-top: 12px;
+    font-size: 6.5px;           /* уменьшенный шрифт */
+    line-height: 14px;
+    text-align: left;
+  }
+
 
 
 }
