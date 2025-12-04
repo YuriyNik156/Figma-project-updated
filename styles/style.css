@@ -677,7 +677,7 @@ html, body {
   .hero {
     background: #D7E0EB;
     width: 100%;
-    min-height: 1000vh;
+    min-height: 6000px;
     position: relative;
   }
 
@@ -1067,10 +1067,10 @@ html, body {
     top: auto !important;
   }
 
-  /* 6 причин почему именно мы? */
+  /* 6 причин почему именно мы? (настроить для мобильной версии)*/
     .advantages-title {
       position: absolute;
-      top: 50vh;
+      top: 55%;
       left: 7.5vh;
       width: 100%;
 
