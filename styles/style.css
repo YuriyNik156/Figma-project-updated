@@ -841,7 +841,7 @@ html, body {
       height: auto;
       z-index: 2;
     }
-    
+
     /* Заголовок */
     .about-title {
       position: absolute;
@@ -906,8 +906,8 @@ html, body {
     position: absolute;
     width: 80vw;        /* достаточно, чтобы текст помещался */
     height: auto;
-    left: 10vw;         /* центрируем через отступы */
-    top: 210vh;         /* подстрой под реальный макет */
+    left: 22vw;         /* центрируем через отступы */
+    top: 170vh;         /* подстрой под реальный макет */
 
     font-family: 'Geologica';
     font-style: normal;
@@ -925,7 +925,7 @@ html, body {
     .card-services {
       position: absolute;
       width: 80vw;        /* примерно 320px на макете 360px */
-      left: 6vw;          /* центрирование */
+      left: 10vw;          /* центрирование */
       top: 180.7vh;          /* адаптивный отступ сверху — 1060px ≈ 21% от 5126px */
       display: flex;
       flex-direction: column;
@@ -955,15 +955,6 @@ html, body {
     top: auto !important;
   }
 
-
-  /* Заголовок секции */
-  .services-title {
-    top: 16vh;         /* бывшие 1400px */
-    left: 5vw;
-    width: 90vw;
-    font-size: 36px;
-    line-height: 42px;
-  }
 
 
 
