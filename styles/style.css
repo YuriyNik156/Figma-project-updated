@@ -9,7 +9,7 @@ html, body {
 /* глобальный блок десктопа */
 .hero {
     width: 100%;
-    min-height: 320vh;
+    min-height: 520vh;
     background: #D7E0EB;
     position: relative;
 
@@ -551,6 +551,19 @@ html, body {
   top: 2046px;
 }
 
+/* 6 причин почему именно мы? */
+.advantages-title {
+    position: absolute;
+    left: 36px;
+    top: 2281px;
+    text-transform: uppercase;
+
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 90px;
+    color: #2D2D2D;
+}
 
 
 
@@ -955,7 +968,23 @@ html, body {
     top: auto !important;
   }
 
+  .advantages-title {
+    position: absolute;
+    width: 85vw;       /* примерно 307px из макета */
+    height: auto;
+    left: 7.5vw;       /* центрируем относительно экрана */
+    top: 442vh;        /* подстрой под реальный макет, ориентир 2281px на 5126px */
 
+    font-family: 'Geologica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6.5vw;  /* около 23–25px на телефоне */
+    line-height: 7.5vw;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #2D2D2D;
+  }
 
 
 
