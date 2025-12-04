@@ -9,7 +9,7 @@ html, body {
 /* глобальный блок десктопа */
 .hero {
     width: 100%;
-    min-height: 220vh;
+    min-height: 320vh;
     background: #D7E0EB;
     position: relative;
 
@@ -435,8 +435,8 @@ html, body {
     left: 0px;
     transform: rotate(0deg);
 
-    width: 1539.85px;
-    height: 1539.85px;
+    width: 1409.85px;
+    height: 1409.85px;
 
     z-index: 1;
     overflow: hidden; /* чтобы изображение не вылезало */
@@ -454,6 +454,105 @@ html, body {
     position: relative;
 }
 
+/* наши услуги */
+.services-title {
+  position: absolute;
+  width: 100%;
+  width: 622px;
+  height: 56px;
+  right: 34px;
+  top: 1400px;
+
+  font-family: 'Geologica';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 90px; /* 112% */
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  leading-trim: both;
+  text-edge: cap;
+
+  color: #2D2D2D;
+}
+
+/* Карточка услуг */
+.service-card {
+  position: absolute;
+  width: 315px;
+  background: rgba(250,250,238,0.01);
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: inset 0 4px 8px rgba(255,255,255,0.3);
+  border-radius: 30px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  backdrop-filter: blur(2px);
+  z-index: 2;
+}
+
+.service-card-title {
+  font-family: 'Geologica Cursive';
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #2D2D2D;
+}
+
+.service-card-text,
+.service-description {
+  font-family: 'Geologica Cursive';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D2D2D;
+}
+
+/* широкие карточки */
+.wide-card {
+  width: 650px;
+  padding: 25px 25px;
+}
+
+.small-card {
+  width: 315px;
+}
+
+.card-lawyers {
+  left: 40px;
+  top: 1576px;
+}
+
+.analytics-card {
+  left: 710px;
+  top: 1576px;
+}
+
+.ai-assist {
+  left: 375px;
+  top: 1831px;
+  height: 195px;
+}
+
+.ai-callcenter {
+  left: 1045px;
+  top: 1831px;
+}
+
+.card-managers {
+  left: 40px;
+  top: 2046px;
+}
+
+.card-calltracking {
+  left: 710px;
+  top: 2046px;
+}
+
+
+
 
 
 
@@ -466,7 +565,7 @@ html, body {
   .hero {
     background: #D7E0EB;
     width: 100%;
-    min-height: 220vh;
+    min-height: 1000vh;
     position: relative;
   }
 
@@ -737,12 +836,12 @@ html, body {
     .about {
       position: absolute;
       left: 5.55vw;      /* 20px по Figma */
-      top: 123.92vh;      /* 970px по Figma */
-      width: 88.9vw;     /* 320px по Figma */
+      top: 123.92vh;
+      width: 88.9vw;
       height: auto;
       z-index: 2;
     }
-
+    
     /* Заголовок */
     .about-title {
       position: absolute;
@@ -779,28 +878,94 @@ html, body {
       text-align: left;
     }
 
-/* Мобильная версия picture2 */
-.picture2 {
+    /* Мобильная версия picture2 */
+    .picture2 {
+        position: absolute;
+
+        width: 143.33vw;      /* 350px из макета */
+        height: 82.48vh;     /* тоже 350px, но в vh */
+
+        left: -10vw;         /* -90px → vw */
+        top: 109.5vh;        /* 730px → vh */
+
+        background: none;
+        opacity: 0.6;
+        transform: rotate(36.46deg);
+        pointer-events: none;
+    }
+
+    .picture2-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+/* наши услуги — мобильная версия */
+  .services-title {
     position: absolute;
+    width: 80vw;        /* достаточно, чтобы текст помещался */
+    height: auto;
+    left: 10vw;         /* центрируем через отступы */
+    top: 210vh;         /* подстрой под реальный макет */
 
-    width: 143.33vw;      /* 350px из макета */
-    height: 82.48vh;     /* тоже 350px, но в vh */
+    font-family: 'Geologica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6.5vw;   /* примерно 23–25px на телефонах */
+    line-height: 8vw;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    z-index: 2;
 
-    left: -10vw;         /* -90px → vw */
-    top: 109.5vh;        /* 730px → vh */
+    color: #2D2D2D;
+  }
 
-    background: none;
-    opacity: 0.6;
-    transform: rotate(36.46deg);
-    pointer-events: none;
-}
+    /* Мобильные карточки услуг */
+    .card-services {
+      position: absolute;
+      width: 80vw;        /* примерно 320px на макете 360px */
+      left: 6vw;          /* центрирование */
+      top: 180.7vh;          /* адаптивный отступ сверху — 1060px ≈ 21% от 5126px */
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
 
-.picture2-bg {
+  .service-card {
+    position: relative;   /* ОТКЛЮЧАЕМ absolute — и всё работает */
+    width: 100%;          /* тянется на всю ширину контейнера */
+    height: auto;         /* пусть сама подстраивается */
+  }
+
+  /* На мобилке широкие и узкие становятся одинаковыми */
+  .wide-card,
+  .small-card {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-}
+  }
+
+  /* Убираем индивидуальные координаты карточек на мобилке */
+  .card-lawyers,
+  .analytics-card,
+  .ai-assist,
+  .ai-callcenter,
+  .card-managers,
+  .card-calltracking {
+    left: auto !important;
+    top: auto !important;
+  }
+
+
+  /* Заголовок секции */
+  .services-title {
+    top: 16vh;         /* бывшие 1400px */
+    left: 5vw;
+    width: 90vw;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+
 
 
 }
