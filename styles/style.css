@@ -364,6 +364,74 @@ html, body {
   max-width: 440px; /* чтобы текст не вылезал */
 }
 
+/* Блок О компании */
+.about {
+  position: absolute;
+  left: 0;
+  top: 970px; /* как в макете — точка начала секции */
+  width: 1400px; /* ширина героя */
+  height: auto;
+  z-index: 2;
+}
+
+/* Заголовок: "о компании" */
+.about-title {
+  position: absolute;
+  left: 39px;
+  top: 0;
+
+  width: 592px;
+  height: 90px;
+
+  font-family: 'Geologica', sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: #2D2D2D;
+  margin: 0;
+}
+
+/* Подзаголовок: первый абзац */
+.about-subtitle {
+  position: absolute;
+  left: 39px;
+  top: 106px;
+
+  width: 643px;
+
+  font-family: 'Geologica Cursive', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #2D2D2D;
+  margin: 0;
+}
+
+/* Правый текстовый блок */
+.about-text {
+  position: absolute;
+  left: 710px;
+  top: 193px;
+
+  width: 650px;
+
+  font-family: 'Geologica Cursive', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #2D2D2D;
+  margin: 0;
+}
+
+
+
+
+
 
 
 /* мобильная версия */
@@ -577,11 +645,11 @@ html, body {
   .main-title {
     position: absolute;
     left: 5.33vw;
-    top: 70.8vh;
+    top: 71.8vh;
     width: 85.33vw;
 
     font-size: 6.66vw;
-    line-height: 8vw;
+    line-height: 9vw;
     letter-spacing: 0.02em;
     font-weight: 600;
     text-transform: uppercase;
@@ -592,11 +660,11 @@ html, body {
   .main-subtitle {
     position: absolute;
     left: 5.33vw;
-    top: 89.8vh;
+    top: 93.8vh;
     width: 79.73vw;
 
-    font-size: 4.26vw;
-    line-height: 5.3vw;
+    font-size: 4.86vw;
+    line-height: 6.3vw;
     font-weight: 400;
     color: #2D2D2D;
     z-index: 2;
@@ -606,7 +674,7 @@ html, body {
     .cta-button {
       position: absolute;
       left: 4.93vw;     /* было 41px */
-      top: 102.75vh;     /* было 692px */
+      top: 110.75vh;     /* было 692px */
 
       width: 85.33%;
       height: 6.49vh;
@@ -637,6 +705,52 @@ html, body {
       color: #ffffff;
 
       max-width: 230px;
+    }
+
+    /* Мобильная версия блока "о компании" */
+    .about {
+      position: absolute;
+      left: 5.55vw;      /* 20px по Figma */
+      top: 123.92vh;      /* 970px по Figma */
+      width: 88.9vw;     /* 320px по Figma */
+      height: auto;
+      z-index: 2;
+    }
+
+    /* Заголовок */
+    .about-title {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 100%;
+      font-size: 7vw;        /* адаптивный размер */
+      line-height: 8vw;
+      text-align: center;
+    }
+
+    /* Подзаголовок */
+    .about-subtitle {
+      position: absolute;
+      left: 0;
+      top: 8vh;            /* расстояние по макету (примерно 106px) */
+      width: 100%;
+
+      font-size: 4.7vw;
+      line-height: 6.3vw;
+      text-align: left;
+    }
+
+    /* Основной текст */
+    .about-text {
+      position: absolute;
+      left: 0;
+      top: 22vh;           /* 193px по макету, переведено в vh */
+      width: 100%;
+
+      font-size: 4.7vw;
+      line-height: 6.3vw;
+      text-align: left;
     }
 
 
