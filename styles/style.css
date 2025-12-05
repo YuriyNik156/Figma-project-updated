@@ -567,16 +567,24 @@ html, body {
 
 /* Подложка */
 .advantages-background {
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     width: 985px;
     height: 680px;
     left: 373px;
-    top: 2517px;
+    top: 2567px;
 
     background: rgba(250, 250, 238, 0.01);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: inset 0px 4px 8px rgba(255, 255, 255, 0.3);
+
+    box-shadow:
+        inset 0px 4px 8px rgba(255, 255, 255, 0.25),
+        inset 0px -4px 8px rgba(0, 0, 0, 0.10);
+
     border-radius: 30px;
     box-sizing: border-box;
 
@@ -587,12 +595,12 @@ html, body {
 
 /* Rectangle 27 — фон под преимуществами */
 .advantages-rectangle {
-    z-index: 1;
+    z-index: 0;
     position: absolute;
     width: 926px;
     height: 603px;
-    left: calc(50% - 596px/2 + 0.5px);
-    top: calc(50% - 963px/2 + 0.5px);
+    left: 383px;
+    top: 2567px;
 
     background: #D7E0EB;
     opacity: 0.85;
