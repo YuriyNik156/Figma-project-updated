@@ -950,6 +950,31 @@ html, body {
     border-right: 1px dashed #2D2D2D;
 }
 
+/* картинка блока "этапы работы" */
+.picture {
+    position: absolute;
+    width: 660px;
+    height: auto;
+    left: 1101px;
+    top: 3738px;
+    transform: translateX(-50%);
+
+    z-index: 1;
+    overflow: hidden; /* чтобы изображение не вылезало */
+}
+
+.picture-bg {
+    width: 100%;       /* подгонять размер — здесь можно менять */
+    height: auto;      /* сохраняет пропорции */
+
+    object-fit: cover; /* если хочешь, чтобы заполняла блок */
+
+    display: block;
+
+    z-index: 1;
+    position: relative;
+}
+
 
 
 
