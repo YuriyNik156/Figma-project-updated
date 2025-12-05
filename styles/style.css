@@ -692,6 +692,26 @@ html, body {
     position: relative;
 }
 
+/* Этапы работы */
+.stages-title {
+    position: absolute;
+    width: 662px;
+    height: 56px;
+    left: calc(50% - 662px/2 + 335px);
+    top: 3307px;
+
+    font-family: 'Geologica', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #2D2D2D;
+}
+
+
 
 
 
