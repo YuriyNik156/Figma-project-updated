@@ -9,7 +9,7 @@ html, body {
 /* глобальный блок десктопа */
 .hero {
     width: 100%;
-    min-height: 720vh;
+    min-height: 820vh;
     background: #D7E0EB;
     position: relative;
 
@@ -599,11 +599,11 @@ html, body {
     position: absolute;
     width: 926px;
     height: 603px;
-    left: 383px;
-    top: 2567px;
+    left: 30px;
+    top: 30px;
 
     background: #D7E0EB;
-    opacity: 0.85;
+    opacity: 0.5;
     border-radius: 30px;
 
     /* чтобы элементы внутри не прилипали к краю */
@@ -994,13 +994,13 @@ html, body {
     color: #2D2D2D;
 }
 
-    .tasks-wrapper {
-        position: absolute; /* чтобы двигался всей пачкой */
-        top: 4550px;        /* меняешь только ЭТО — и весь блок смещается */
-        left: 0;
-        width: 100%;        /* чтобы координаты внутри работали как раньше */
-        height: auto;
-    }
+.tasks-wrapper {
+    position: absolute; /* чтобы двигался всей пачкой */
+    top: 4550px;        /* меняешь только ЭТО — и весь блок смещается */
+    left: 0;
+    width: 100%;        /* чтобы координаты внутри работали как раньше */
+    height: auto;
+}
 
 .box {
     box-sizing: border-box;
@@ -1113,6 +1113,97 @@ html, body {
     color: #FFFFFF;
 }
 
+/* с нами сотрудничают: текст */
+.partners-title {
+    position: absolute;
+    width: 1094px;
+    height: 56px;
+    left: 35px;
+    top: 5178.34px;
+
+    font-family: 'Geologica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #2D2D2D;
+}
+
+.partners-wrapper {
+    position: absolute;
+    left: -5px;      /* или любое другое значение */
+    top: 300px;  /* ← двигаешь весь блок сюда */
+    width: 100%;
+    height: auto;
+}
+
+
+.partners-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Общий контейнер */
+.partners-logos {
+    position: relative;
+}
+
+/* ЛОГО 6 */
+.logo6 {
+    position: absolute;
+    width: 415px;
+    height: 163px;
+    left: -115px;
+    top: 5074.34px;
+}
+
+/* ЛОГО 5 */
+.logo5 {
+    position: absolute;
+    width: 716px;
+    height: 163px;
+    left: 255px;
+    top: 5074.34px;
+}
+
+/* ЛОГО 4 */
+.logo4 {
+    position: absolute;
+    width: 490px;
+    height: 163px;
+    left: 996px;
+    top: 5074.34px;
+}
+
+/* ЛОГО 1 */
+.logo1 {
+    position: absolute;
+    width: 508px;
+    height: 163px;
+    left: -178px;
+    top: 5282.34px;
+}
+
+/* ЛОГО 3 */
+.logo3 {
+    position: absolute;
+    width: 515px;
+    height: 163px;
+    left: 220px;
+    top: 5282.34px;
+}
+
+/* ЛОГО 2 */
+.logo2 {
+    position: absolute;
+    width: 471px;
+    height: 163px;
+    left: 800px;
+    top: 5282.34px;
+}
 
 
 
