@@ -1079,7 +1079,39 @@ html, body {
     color: #2D2D2D;
 }
 
+/* Контейнер кнопки */
+.button {
+    position: absolute;
+    width: 650px;
+    height: 88px;
+    left: 375px;
+    top: 4970px;
+    background: #2D2D2D;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px; /* чтобы иконка была не у края */
+    box-sizing: border-box;
+    cursor: pointer;
+}
 
+/* Иконка трубки */
+.button-icon {
+    width: 40px;   /* подбираешь под дизайн */
+    height: 40px;
+    margin-right: 20px; /* расстояние между иконкой и текстом */
+}
+
+/* Текст кнопки */
+.button-text {
+    font-family: 'Geologica Cursive', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
 
 
