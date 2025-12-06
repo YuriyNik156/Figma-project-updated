@@ -9,7 +9,7 @@ html, body {
 /* глобальный блок десктопа */
 .hero {
     width: 100%;
-    min-height: 820vh;
+    min-height: 874vh;
     background: #D7E0EB;
     position: relative;
 
@@ -26,14 +26,14 @@ html, body {
     height: 1144px;
 
     z-index: 1;
-    overflow: hidden; /* чтобы изображение не вылезало */
+    overflow: hidden;
 }
 
 .main-bg {
-    width: 100%;       /* подгонять размер — здесь можно менять */
-    height: auto;      /* сохраняет пропорции */
+    width: 100%;
+    height: auto;
 
-    object-fit: cover; /* если хочешь, чтобы заполняла блок */
+    object-fit: cover;
 
     display: block;
 
@@ -51,7 +51,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 180px; /* или любое другое значение */
+    gap: 180px;
 
     padding: 0 40px;
     z-index: 10;
@@ -62,7 +62,7 @@ html, body {
 .logo {
     position: relative;
 
-    z-index: 10;   /* чтобы быть поверх размытого фона */
+    z-index: 10;
 }
 
 .logo-title {
@@ -75,7 +75,7 @@ html, body {
 }
 
 .logo-subtitle {
-    margin-top: 2px; /* вместо Figma top: 73px */
+    margin-top: 2px;
     font-family: 'Geologica', sans-serif;
     font-weight: 700;
     font-size: 7px;
@@ -107,8 +107,8 @@ html, body {
 .header-menu {
   display: flex;
   align-items: center;
-  gap: 40px; /* расстояние между кнопками (можно подправить под Figma) */
-  padding: 0 25px; /* внутренние отступы как в Figma */
+  gap: 40px;
+  padding: 0 25px;
 }
 
 /* Обычные кнопки меню */
@@ -163,7 +163,7 @@ html, body {
 
   display: flex;
   align-items: center;
-  gap: 20px;        /* одинаковый отступ между картинкой и текстом */
+  gap: 20px;
   padding-left: 25px;
   box-sizing: border-box;
   cursor: pointer;
@@ -173,7 +173,7 @@ html, body {
 
 /* Изображение (лого-кластер) */
 .logo-image {
-  position: static;     /* убираем absolute */
+  position: static;
   width: 108.78px;
   height: 67.47px;
   object-fit: contain;
@@ -181,7 +181,7 @@ html, body {
 
 /* Текст логотипа */
 .logo-text {
-  position: static;     /* тоже убираем absolute */
+  position: static;
   font-family: 'Geologica', sans-serif;
   font-size: 24px;
   line-height: 25px;
@@ -200,7 +200,7 @@ html, body {
   width: 223px;
   height: 60px;
 
-  background: rgba(250, 250, 238, 0.08); /* FAFAEE - 1% */
+  background: rgba(250, 250, 238, 0.08);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 
@@ -209,15 +209,15 @@ html, body {
   border-radius: 30px;
 
   box-shadow:
-    inset 0 4px 8px rgba(255, 255, 255, 0.25),  /* верхнее лёгкое свечение */
-    inset 0 -6px 12px rgba(0, 0, 0, 0.20);      /* нижний затемняющий слой */
+    inset 0 4px 8px rgba(255, 255, 255, 0.25),
+    inset 0 -6px 12px rgba(0, 0, 0, 0.20);
 
   box-sizing: border-box;
 
   display: flex;
   align-items: center;
-  gap: 15px;         /* расстояние между значком и текстом */
-  padding-left: 25px;/* отступ слева, как в Figma */
+  gap: 15px;
+  padding-left: 25px;
   cursor: pointer;
   z-index: 2;
 }
@@ -226,7 +226,7 @@ html, body {
 .support-icon {
   width: 24px;
   height: 24px;
-  object-fit: contain; /* чтобы не растягивалась */
+  object-fit: contain;
 }
 
 /* Текст "Поддержка 24/7" */
@@ -267,7 +267,7 @@ html, body {
   width: 212px;
   height: 157px;
   border-radius: 10px;
-  object-fit: cover; /* чтобы красиво вписывалась */
+  object-fit: cover;
 }
 
 /* Текст */
@@ -276,7 +276,7 @@ html, body {
   margin-top: 15px;
 
   font-family: 'Geologica', sans-serif;
-  font-weight: 500; /* medium */
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -300,14 +300,14 @@ html, body {
   text-transform: uppercase;
   z-index: 2;
 
-  text-align: left;  /* ← выравнивание по левому краю */
+  text-align: left;
 }
 
 /* Main subtitle */
 .main-subtitle {
   position: absolute;
   left: 47px;
-  top: 599px; /* ← было 599px — сдвинули ближе */
+  top: 599px;
 
   width: 650px;
 
@@ -318,7 +318,7 @@ html, body {
   color: #2D2D2D;
   z-index: 2;
 
-  text-align: left;  /* ← выравнивание по левому краю */
+  text-align: left;
 }
 
 /* Большая кнопка (Rectangle 7) */
@@ -335,7 +335,7 @@ html, body {
 
   display: flex;
   align-items: center;
-  gap: 25px;         /* расстояние между трубкой и текстом */
+  gap: 25px;
   padding-left: 35px;
   box-sizing: border-box;
   z-index: 2;
@@ -346,7 +346,7 @@ html, body {
 
 /* Иконка трубки (Vector) */
 .cta-icon {
-  width: 40px;      /* можно подправить под твою картинку */
+  width: 40px;
   height: 40px;
   object-fit: contain;
 }
@@ -361,15 +361,15 @@ html, body {
   text-transform: uppercase;
   color: #FFFFFF;
 
-  max-width: 440px; /* чтобы текст не вылезал */
+  max-width: 440px;
 }
 
 /* Блок О компании */
 .about {
   position: absolute;
   left: 0;
-  top: 970px; /* как в макете — точка начала секции */
-  width: 1400px; /* ширина героя */
+  top: 970px;
+  width: 1400px;
   height: auto;
   z-index: 2;
 }
@@ -439,14 +439,14 @@ html, body {
     height: 1409.85px;
 
     z-index: 1;
-    overflow: hidden; /* чтобы изображение не вылезало */
+    overflow: hidden;
 }
 
 .picture2-bg {
-    width: 100%;       /* подгонять размер — здесь можно менять */
-    height: auto;      /* сохраняет пропорции */
+    width: 100%;
+    height: auto;
 
-    object-fit: cover; /* если хочешь, чтобы заполняла блок */
+    object-fit: cover;
 
     display: block;
 
@@ -467,7 +467,7 @@ html, body {
   font-style: normal;
   font-weight: 500;
   font-size: 80px;
-  line-height: 90px; /* 112% */
+  line-height: 90px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 
@@ -640,7 +640,7 @@ html, body {
     left: 0;
     top: 0;
     border-radius: 12px;
-    object-fit: contain; /* чтобы картинка красиво влезала */
+    object-fit: contain;
 }
 
 
@@ -713,10 +713,10 @@ html, body {
 
 .scheme-wrapper {
     position: absolute;
-    left: 0; /* или нужное тебе значение */
-    top: 100px; /* вот это значение ты двигаешь как хочешь */
+    left: 0;
+    top: 100px;
     width: 100%;
-    height: 900px; /* подгони под размер всей схемы */
+    height: 900px;
 }
 
 .scheme-block {
@@ -960,14 +960,14 @@ html, body {
     transform: translateX(-50%);
 
     z-index: 1;
-    overflow: hidden; /* чтобы изображение не вылезало */
+    overflow: hidden;
 }
 
 .picture-bg {
-    width: 100%;       /* подгонять размер — здесь можно менять */
-    height: auto;      /* сохраняет пропорции */
+    width: 100%;
+    height: auto;
 
-    object-fit: cover; /* если хочешь, чтобы заполняла блок */
+    object-fit: cover;
 
     display: block;
 
@@ -995,10 +995,10 @@ html, body {
 }
 
 .tasks-wrapper {
-    position: absolute; /* чтобы двигался всей пачкой */
-    top: 4550px;        /* меняешь только ЭТО — и весь блок смещается */
+    position: absolute;
+    top: 4550px;
     left: 0;
-    width: 100%;        /* чтобы координаты внутри работали как раньше */
+    width: 100%;
     height: auto;
 }
 
@@ -1090,16 +1090,16 @@ html, body {
     border-radius: 25px;
     display: flex;
     align-items: center;
-    padding-left: 25px; /* чтобы иконка была не у края */
+    padding-left: 25px;
     box-sizing: border-box;
     cursor: pointer;
 }
 
 /* Иконка трубки */
 .button-icon {
-    width: 40px;   /* подбираешь под дизайн */
+    width: 40px;
     height: 40px;
-    margin-right: 20px; /* расстояние между иконкой и текстом */
+    margin-right: 20px;
 }
 
 /* Текст кнопки */
@@ -1133,8 +1133,8 @@ html, body {
 
 .partners-wrapper {
     position: absolute;
-    left: -5px;      /* или любое другое значение */
-    top: 300px;  /* ← двигаешь весь блок сюда */
+    left: -5px;
+    top: 300px;
     width: 100%;
     height: auto;
 }
@@ -1205,6 +1205,194 @@ html, body {
     top: 5282.34px;
 }
 
+/* связаться с нами: */
+.contact-title {
+    position: absolute;
+    width: 865px;
+    height: 56px;
+    left: calc(50% - 865px/2 - 2.5px);
+    top: 5915.34px;
+
+    font-family: 'Geologica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    /* темный */
+    color: #2D2D2D;
+}
+
+/* Карта сайта */
+.site-map-wrapper {
+    position: absolute;
+    left: 0px;
+    top: 350px;
+    width: 500px;
+    height: 300px;
+}
+
+
+/* Главная */
+.map-main {
+    position: absolute;
+    width: 69px;
+    height: 11px;
+    left: 40px;
+    top: 5709px;
+
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+}
+
+
+/* О компании */
+.map-about {
+    position: absolute;
+    width: 102px;
+    height: 11px;
+    left: 40px;
+    top: 5745px;
+
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+}
+
+
+/* Наши услуги */
+.map-services {
+    position: absolute;
+    width: 107px;
+    height: 11px;
+    left: 40px;
+    top: 5781px;
+
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+}
+
+
+/* Преимущества */
+.map-advantages {
+    position: absolute;
+    width: 127px;
+    height: 11px;
+    left: 222px;
+    top: 5709px;
+
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+}
+
+
+/* Этапы работы */
+.map-stages {
+    position: absolute;
+    width: 118px;
+    height: 11px;
+    left: 222px;
+    top: 5745px;
+
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+}
+
+
+/* Партнеры */
+.map-partners {
+    position: absolute;
+    width: 85px;
+    height: 11px;
+    left: 222px;
+    top: 5781px;
+
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+}
+
+
+.social-icons {
+    position: absolute;
+    left: 50%;              /* пример */
+    top: 6075px;            /* вот этот top теперь двигаешь как хочешь */
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;              /* расстояние между иконками */
+}
+
+.icon-whatsapp,
+.icon-telegram {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* контакты */
+.contacts {
+    position: absolute;
+    left: 50%;              /* то же самое, что было у тебя раньше */
+    top: 6050px;            /* регулируешь одним числом! */
+    transform: translateX(300px); /* чтобы сохранить смещение вправо */
+}
+
+.contact-phone,
+.contact-email {
+    font-family: 'Geologica';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #2D2D2D;
+}
+
+.contact-email {
+    margin-top: 25px; /* расстояние между строками */
+}
+
+/* BBK IT логотип */
+.company-logo {
+    position: absolute;
+    width: 1396px;
+    height: 294px;
+    left: calc(50% - 1391px/2 - 3px);
+    top: 6205.64px;
+}
+
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
 
 
 
@@ -1221,11 +1409,11 @@ html, body {
 
     .main {
       position: absolute;
-      width: 191vw;          /* 926px / 375px * 100% = ~246% ширины экрана */
-      height: 85vh;         /* 735.32px / 667px * 100% = ~110% высоты экрана */
-      left: 4.5vw;             /* центрируем относительно экрана */
-      top: 0vh;               /* пропорциональный отступ сверху */
-      transform: translateX(-50%); /* чтобы left: 50vw был центром */
+      width: 191vw;
+      height: 85vh;
+      left: 4.5vw;
+      top: 0vh;
+      transform: translateX(-50%);
       overflow: hidden;
       z-index: 1;
     }
