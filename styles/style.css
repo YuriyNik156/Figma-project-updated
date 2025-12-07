@@ -1403,7 +1403,7 @@ html, body {
   .hero {
     background: #D7E0EB;
     width: 100%;
-    min-height: 6000px;
+    min-height: 820vh;
     position: relative;
   }
 
@@ -1796,7 +1796,7 @@ html, body {
   /* 6 причин почему именно мы? (настроить для мобильной версии)*/
     .advantages-title {
       position: absolute;
-      top: 56%;
+      top: 367vh;
       left: 7.5vh;
       width: 100%;
 
@@ -1809,6 +1809,7 @@ html, body {
     text-transform: uppercase;
     color: #2D2D2D;
     z-index: 2;
+    text-align: left;
     }
 
   /* Подложка (фон) */
@@ -1889,7 +1890,7 @@ html, body {
   /* этапы работы */
     .stages-title {
       position: absolute;
-      top: 77%;
+      top: 505vh;
       left: 0vh;
       width: 100%;
       text-align: center;
@@ -2199,3 +2200,98 @@ html, body {
     position: relative;
 }
 
+/* закрываем задачи */
+.close-tasks {
+  position: absolute;
+  top: 600vh;
+  left: 0vh;
+  width: 100%;
+  text-align: center;
+
+font-family: 'Geologica';
+font-style: normal;
+font-weight: 500;
+font-size: 6.5vw;  /* около 23–25px на телефоне */
+line-height: 7.5vw;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #2D2D2D;
+z-index: 2;
+}
+
+
+
+/* Обёртка блока задач */
+.tasks-wrapper {
+    width: 100%;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    box-sizing: border-box;
+    position: relative; /* можно оставить */
+    top: 0; /* убираем старое смещение */
+}
+
+/* Общий стиль карточек */
+.box {
+    width: 100%;
+    padding: 5vw 6vw;
+    min-height: 18vw;
+
+    background: rgba(250, 250, 238, 0.01);
+    border: 1.2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 4.8px 9.6px rgba(255, 255, 255, 0.3);
+    border-radius: 8vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* убрать абсолютное позиционирование */
+}
+
+/* Текст задачи */
+.box-text {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500;
+    font-size: 6vw;
+    line-height: 7.5vw;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #2D2D2D;
+    text-align: center;
+}
+
+/* Кнопка */
+.button {
+    width: 90%;
+    margin: 5vw auto 0 auto; /* сверху 5vw, по центру */
+    background: #2D2D2D;
+    border-radius: 7vw;
+    min-height: 18vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 4vw 6vw;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Иконка кнопки */
+.button-icon {
+    width: 8vw;
+    height: 8vw;
+    margin-right: 4vw;
+}
+
+/* Текст кнопки */
+.button-text {
+    font-family: 'Geologica Cursive', sans-serif;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 6vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
