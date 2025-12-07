@@ -996,15 +996,79 @@ html, body {
 
 /* Обёртка блока задач */
 .tasks-wrapper {
+    position: absolute;
+    top: 4550px;
+    left: 0;
     width: 100%;
+    height: auto;
+    
     padding: 5vw;
     display: flex;
     flex-direction: column;
     gap: 5vw;
     box-sizing: border-box;
-    position: relative; /* можно оставить */
-    top: 500vh; /* убираем старое смещение */
+    position: relative; /* оставляем, чтобы можно было смещать блок, если нужно */
+    top: 0; /* убираем старое большое смещение */
 }
+
+/* Общий стиль карточек */
+.box {
+    width: 100%;
+    padding: 5vw 6vw;
+    min-height: 18vw;
+
+    background: rgba(250, 250, 238, 0.01);
+    border: 1.2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 4.8px 9.6px rgba(255, 255, 255, 0.3);
+    border-radius: 8vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; /* текст по центру */
+}
+
+/* Текст задачи */
+.box-text {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500;
+    font-size: 6vw;
+    line-height: 7.5vw;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #2D2D2D;
+    text-align: center;
+}
+
+/* Кнопка */
+.button {
+    width: 90%;
+    margin: 5vw auto 0 auto; /* сверху отступ 5vw, по центру */
+    background: #2D2D2D;
+    border-radius: 7vw;
+    min-height: 18vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 4vw 6vw;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.button-icon {
+    width: 8vw;
+    height: 8vw;
+    margin-right: 4vw;
+}
+.button-text {
+    font-family: 'Geologica Cursive', sans-serif;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 6vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 
 /* Общий стиль карточек */
 .box {
@@ -1768,12 +1832,14 @@ html, body {
     z-index: 2;
     }
 
+  }
+
   /* Подложка (фон) */
   .advantages-background {
     position: relative;
     width: 90vw;
     left: 5vw;
-    top: 380vh;
+    top: 375vh;
     height: auto;
     padding: 6vw;
     border-radius: 20px;
@@ -1842,6 +1908,7 @@ html, body {
     margin-left: -25vw;
     margin-top: 2vh;
 }
+<<<<<<< HEAD
 
   /* этапы работы */
     .stages-title {
@@ -2244,3 +2311,5 @@ html, body {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+=======
+>>>>>>> parent of 0f93b24 (add stages schemas in mobile)
