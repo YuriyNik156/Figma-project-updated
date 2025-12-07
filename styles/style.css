@@ -994,6 +994,14 @@ html, body {
     color: #2D2D2D;
 }
 
+.tasks-wrapper {
+    position: absolute;
+    top: 4550px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
 .box {
     box-sizing: border-box;
     background: rgba(250, 250, 238, 0.01);
@@ -1008,8 +1016,9 @@ html, body {
     width: 440px;
     height: 72px;
     left: 35px;
-    top: 4333px;
+    top: 0px;
 }
+
 .automation .box-text {
     position: absolute;
     width: 320px;
@@ -1031,8 +1040,9 @@ html, body {
     width: 440px;
     height: 72px;
     left: calc(50% - 440px/2 - 5px);
-    top: 4445px;
+    top: 112px;
 }
+
 .analytics .box-text {
     position: absolute;
     width: 224px;
@@ -1054,8 +1064,9 @@ html, body {
     width: 440px;
     height: 123px;
     left: 915px;
-    top: 4557px;
+    top: 224px;
 }
+
 .legal .box-text {
     position: absolute;
     width: 292px;
@@ -1880,7 +1891,6 @@ html, body {
     margin-left: -25vw;
     margin-top: 2vh;
 }
-<<<<<<< HEAD
 
   /* этапы работы */
     .stages-title {
@@ -2283,5 +2293,3 @@ html, body {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-=======
->>>>>>> parent of 0f93b24 (add stages schemas in mobile)
