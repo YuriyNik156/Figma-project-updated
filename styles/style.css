@@ -1796,7 +1796,7 @@ html, body {
   /* 6 причин почему именно мы? (настроить для мобильной версии)*/
     .advantages-title {
       position: absolute;
-      top: 55%;
+      top: 56%;
       left: 7.5vh;
       width: 100%;
 
@@ -1813,3 +1813,77 @@ html, body {
 
   }
 
+  /* Подложка (фон) */
+  .advantages-background {
+    position: relative;
+    width: 90vw;
+    left: 5vw;
+    top: 375vh;
+    height: auto;
+    padding: 6vw;
+    border-radius: 20px;
+    display: block;
+  }
+
+  .advantages-rectangle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+  }
+
+  /* Колонка */
+  .advantages-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+/* Один пункт преимущества */
+.advantage-item {
+    display: flex;
+    flex-direction: column;   /* ← вертикальная колонка */
+    gap: 3vw;
+    width: 100%;
+}
+
+/* Строка: иконка + заголовок */
+.advantage-row {
+    display: flex;
+    flex-direction: row;      /* ← горизонтально */
+    align-items: center;      /* выравниваем по высоте */
+    gap: 4vw;
+    flex: 0 0 auto;
+}
+
+/* Иконка */
+.advantage-icon {
+    width: 14vw;
+    height: 14vw;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Заголовок — справа от иконки */
+.advantage-title {
+    font-size: 5.5vw;
+    line-height: 6.5vw;
+    text-align: left;
+    margin: 0;
+    max-width: 60vw;
+}
+
+/* Текст — под строкой, на всю ширину */
+.advantage-text {
+    width: 100%
+    font-size: 4vw;
+    line-height: 5vw;
+    text-align: left;
+    margin-left: -25vw;
+    margin-top: 2vh;
+}
