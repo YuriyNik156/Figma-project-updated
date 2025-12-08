@@ -1347,11 +1347,11 @@ html, body {
 
 .social-icons {
     position: absolute;
-    left: 50%;              /* пример */
-    top: 6075px;            /* вот этот top теперь двигаешь как хочешь */
+    left: 50%;
+    top: 6075px;
     transform: translateX(-50%);
     display: flex;
-    gap: 20px;              /* расстояние между иконками */
+    gap: 20px;
 }
 
 .icon-whatsapp,
@@ -1382,7 +1382,7 @@ html, body {
 }
 
 .contact-email {
-    margin-top: 25px; /* расстояние между строками */
+    margin-top: 25px;
 }
 
 /* BBK IT логотип */
@@ -1412,7 +1412,7 @@ html, body {
   .hero {
     background: #D7E0EB;
     width: 100%;
-    min-height: 820vh;
+    min-height: 745vh;
     position: relative;
   }
 
@@ -2375,7 +2375,91 @@ z-index: 2;
     object-fit: contain;
 }
 
+/* связаться с нами */
+.contact-title {
+  position: absolute;
+  top: 704vh;
+  left: 0vh;
+  width: 100%;
+  text-align: center;
 
+font-family: 'Geologica';
+font-style: normal;
+font-weight: 500;
+font-size: 8vw;
+line-height: 9.5vw;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #2D2D2D;
+z-index: 2;
+}
+
+/* иконки whatsapp и telegram */
+.social-icons {
+    position: absolute;
+    left: 50%;
+    top: 711vh;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.icon-whatsapp,
+.icon-telegram {
+    width: 12vw;
+    height: 12vw;
+    cursor: pointer;
+}
+
+/* контакты */
+.contacts {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+
+    width: 100%;
+    margin-top: 120vw;
+
+    text-align: center;
+}
+
+.contact-phone,
+.contact-email {
+    font-size: 7.5vw;
+    line-height: 9vw;
+}
+
+.contact-email {
+    margin-top: 4vw;
+}
+
+/* скрыть карту сайта */
+    .site-map-wrapper,
+    .map-main,
+    .map-about,
+    .map-services,
+    .map-advantages,
+    .map-stages,
+    .map-partners {
+        display: none !important;
+    }
+
+/* BBK IT логотип */
+.company-logo {
+    position: absolute;
+    width: 100%;
+    height: 33vw;
+    left: 0;
+    top: 730vh;
+}
+
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
 
 
 
