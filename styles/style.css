@@ -1941,248 +1941,178 @@ html, body {
 }
 
 
+/* === Контейнер всей мобильной схемы === */
 .scheme-wrapper {
     position: absolute;
-    overflow: visible;
-    left: 20px;
-    top: 3817px;
-    width: 425px;
-    height: 290.86px;
+    left: 10vh;
+    top: 530.7vh;
+    width: 100%;
+    height: auto;
+    transform: rotate(0deg);
 }
 
+/* Внутренний контейнер */
 .scheme-block {
     position: relative;
     width: 100%;
     height: 100%;
-
-    transform-origin: top left;
-    transform: rotate(90deg) translateY(-100%);
 }
 
-/* Этапы работы, текст */
-.stage-text {
+/* === Общие стили для точек === */
+.scheme-block div[class^="point"] {
     position: absolute;
-    font-family: 'Geologica Cursive', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 8vw;
-    line-height: 9.5vw;
-    color: #2D2D2D;
 }
 
-/* Конкретные позиции */
-.stage1 {
-    width: 149px;
-    height: 51px;
-    left: 41px;
-    top: 3767.5px;
-}
-
-.stage2 {
-    width: 175px;
-    height: 71px;
-    left: 370px;
-    top: 3572.5px;
-}
-
-.stage3 {
-    width: 143px;
-    height: 31px;
-    left: 723px;
-    top: 3572.5px;
-}
-
-.stage4 {
-    width: 156px;
-    height: 71px;
-    left: 730px;
-    top: 3932.5px;
-}
-
-.stage5 {
-    width: 134px;
-    height: 51px;
-    left: 371px;
-    top: 3932.5px;
-}
-
-
-/* === ТОЧКА 1 === */
-.point1-bg {
-    position: absolute;
-    width: 80px;
-    height: 30px;
-    left: 76px;
-    top: 3638px;
+.scheme-block div[class$="-bg"] {
+    width: 14.15px;
+    height: 14.15px;
     background: #2D2D2D;
-    border-radius: 22.5px;
+    border-radius: 50%;
+}
+
+.scheme-block span[class$="-text"] {
+    position: absolute;
+    font-family: 'Geologica Cursive';
+    font-weight: 500;
+    font-size: 7.5px;
+    color: #D7E0EB;
+    line-height: 9px;
+}
+
+/* === Точка 1 (у неё прямоугольник, а не круг) === */
+.point1 {
+    left: 172px;
+    top: 7px;
+}
+
+.point1-bg {
+    width: 37.73px;
+    height: 14.15px;
+    border-radius: 10.6px;
 }
 
 .point1-text {
-    position: absolute;
-    width: 18px;
-    height: 11px;
-    left: 107px;
-    top: 3647px;
-    font-family: 'Geologica Cursive';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #D7E0EB;
+    left: 14px;
+    top: 4px;
 }
 
-/* === ТОЧКА 2 === */
-.point2-bg {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 422px;
-    top: 3443px;
-    background: #2D2D2D;
-    border-radius: 50%;
+/* === Точка 2 === */
+.point2 {
+    left: 227px;
+    top: 175px;
 }
 
 .point2-text {
-    position: absolute;
-    width: 21px;
-    height: 11px;
-    left: 427px;
-    top: 3452px;
-    font-family: 'Geologica Cursive';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #D7E0EB;
+    left: 3px;
+    top: 4px;
 }
 
-/* === ТОЧКА 3 === */
-.point3-bg {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 779px;
-    top: 3443px;
-    background: #2D2D2D;
-    border-radius: 50%;
+/* === Точка 3 === */
+.point3 {
+    left: 227px;
+    top: 330px;
 }
 
 .point3-text {
-    position: absolute;
-    width: 21px;
-    height: 11px;
-    left: 784px;
-    top: 3452px;
-    font-family: 'Geologica Cursive';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #D7E0EB;
+    left: 3px;
+    top: 4px;
 }
 
-/* === ТОЧКА 4 === */
-.point4-bg {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 779px;
-    top: 3803px;
-    background: #2D2D2D;
-    border-radius: 50%;
+/* === Точка 4 === */
+.point4 {
+    left: 57px;
+    top: 330px;
 }
 
 .point4-text {
-    position: absolute;
-    width: 21px;
-    height: 11px;
-    left: 783px;
-    top: 3812px;
-    font-family: 'Geologica Cursive';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #D7E0EB;
+    left: 2px;
+    top: 4px;
 }
 
-/* === ТОЧКА 5 === */
-.point5-bg {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 422px;
-    top: 3803px;
-    background: #2D2D2D;
-    border-radius: 50%;
+/* === Точка 5 === */
+.point5 {
+    left: 57px;
+    top: 175px;
 }
 
 .point5-text {
-    position: absolute;
-    width: 21px;
-    height: 11px;
-    left: 426px;
-    top: 3812px;
-    font-family: 'Geologica Cursive';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #D7E0EB;
+    left: 4px;
+    top: 4px;
 }
 
-
-/* Общий стиль для всех линий */
+/* === Линии между точками === */
 .line {
     position: absolute;
     width: 0;
-    border-left: 1px dashed #2D2D2D;
+    border: 0.47px dashed #2D2D2D;
 }
 
-/* Линия 1 — от точки 1 вниз */
+/* Line 1 — от точки 1 */
 .line1 {
-    left: 116.5px;   /* макет Figma */
-    top: 3668px;
-    height: 79px;
+    left: 147px;
+    top: 14px;
+    height: 37px;
+    transform: rotate(90deg);
 }
 
-/* Линия 2 — от точки 2 вниз */
+/* Line 2 — от точки 2 */
 .line2 {
-    left: 436.5px;
-    top: 3473px;
-    height: 79px;
+    left: 157px;
+    top: 182px;
+    height: 70px;
+    transform: rotate(90deg);
 }
 
-/* Линия 3 — от точки 3 вниз */
+/* Line 3 — от точки 3 */
 .line3 {
-    left: 794.5px;
-    top: 3473px;
-    height: 79px;
+    left: 157px;
+    top: 337px;
+    height: 70px;
+    transform: rotate(-90deg);
 }
 
-/* Линия 4 — от точки 4 вниз */
+/* Line 4 — от точки 4 */
 .line4 {
-    left: 793.5px;
-    top: 3833px;
-    height: 79px;
+    left: -13px;
+    top: 337px;
+    height: 70px;
+    transform: rotate(90deg);
 }
 
-/* Линия 5 — от точки 5 вниз */
+/* Line 5 — от точки 5 */
 .line5 {
-    left: 436.5px;
-    top: 3833px;
-    height: 79px;
+    left: -13px;
+    top: 182px;
+    height: 70px;
+    transform: rotate(90deg);
 }
 
+/* === Декоративная большая линия === */
 .line-horizontal {
     position: absolute;
-    width: 1000px;
-    height: 380px;
-    left: 116px;
-    top: 3448px;
-
-
-    border-radius: 50%;
-
-    border-left: 1px dashed #2D2D2D;
-    border-right: 1px dashed #2D2D2D;
+    left: 134px;
+    top: 7px;
+    width: 411px;
+    height: 170px;
+    background: linear-gradient(89.86deg, #2D2D2D 0.69%, #FAFAEE 50.07%, #2D2D2D 99.46%);
+    transform: rotate(90deg);
 }
+
+/* === Текст этапов === */
+.stage-text {
+    position: absolute;
+    width: 120px;
+    font-size: 10px;
+    line-height: 12px;
+    font-family: 'Geologica Cursive';
+    color: #2D2D2D;
+}
+
+.stage1 { left: 210px; top: -10px; width: 150px; }
+.stage2 { left: 280px; top: 150px; width: 150px; }
+.stage3 { left: 280px; top: 300px; width: 150px; }
+.stage4 { left: -40px;  top: 300px; width: 150px; }
+.stage5 { left: -40px;  top: 150px; width: 150px; }
 
 /* картинка блока "этапы работы" */
 .picture {
