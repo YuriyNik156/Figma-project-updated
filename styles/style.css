@@ -1439,7 +1439,7 @@ html, body {
   .header {
     top: 20px;
     left: 0px;
-    width: 100%;
+    width: 92%;
 
     display: flex;
     align-items: center;
@@ -1467,6 +1467,7 @@ html, body {
     gap: 10px;
     flex-shrink: 0;
     z-index: 10;
+    margin-left: auto;
   }
 
   .header-mobile .icon {
