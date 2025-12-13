@@ -1416,14 +1416,15 @@ html, body {
   }
 
     .main {
-      position: relative; /* можно вообще убрать */
-      width: 100%;
-      height: auto;
-
-      margin-top: 20px; /* отступ ОТ хедера */
+      position: absolute;
+      width: 191vw;
+      height: 85vh;
+      left: 4.5vw;
+      top: 0vh;
+      transform: translateX(-50%);
       overflow: hidden;
+      z-index: 1;
     }
-
 
     /* картинка внутри блока */
     .main-bg {
@@ -1434,19 +1435,18 @@ html, body {
     }
 
   /* мобильный хедер → в одну линию */
-    .header {
-        top: 20px;
-        left: 0px;
-        width: 92%;
+  .header {
+    top: 20px;
+    left: 0px;
+    width: 92%;
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-        padding: 0 12px;
-        gap: 10px;
-    }
-
+    padding: 0 12px;
+    gap: 10px;
+  }
 
   /* логотип */
   .logo {
@@ -1492,16 +1492,6 @@ html, body {
   .header-mobile .burger {
     background: url('../img/main/burger_mobil.png') no-repeat center center;
   }
-
-    .main {
-      position: relative; /* можно вообще убрать */
-      width: 100%;
-      height: auto;
-
-      margin-top: 20px; /* отступ ОТ хедера */
-      overflow: hidden;
-    }
-
 
 /* мобильный логотипный блок */
     .logo-frame {
