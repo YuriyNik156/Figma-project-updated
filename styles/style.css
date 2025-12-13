@@ -457,10 +457,9 @@ html, body {
 /* наши услуги */
 .services-title {
   position: absolute;
-  width: 100%;
-  width: 622px;
+  width: 850px;
   height: 56px;
-  right: 34px;
+  left: 800px;
   top: 1400px;
 
   font-family: 'Geologica';
@@ -670,7 +669,7 @@ html, body {
 /* картинка фон */
 .background {
     position: absolute;
-      width: 100%;
+      width: 1520px;
       height: auto;
       left: 0px;
       top: 2418px;
@@ -697,7 +696,7 @@ html, body {
     position: absolute;
     width: 662px;
     height: 56px;
-    left: calc(50% - 662px/2 + 335px);
+    left: 750px;
     top: 3307px;
 
     font-family: 'Geologica', sans-serif;
@@ -1040,7 +1039,7 @@ html, body {
     position: absolute;
     width: 440px;
     height: 72px;
-    left: calc(50% - 440px/2 - 5px);
+    left: 515px;
     top: 112px;
     cursor: pointer;
 }
